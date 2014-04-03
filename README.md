@@ -1,5 +1,5 @@
 
-Blazar
-======
+fiber-server
+============
 
-Blazar is a barebones websocket server built using Quasar fibers.
+fiber-server is a barebones websocket server built using Quasar fibers.
