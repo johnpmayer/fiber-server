@@ -1,0 +1,17 @@
+task start << {
+  println 'Starting'
+}
+
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile group: 'co.paralleluniverse', name: 'quasar-core', version: '0.5.0'
+}
+
+apply plugin: 'application'
+
+mainClassName = 'com.wecamtoplay.Server'
