@@ -8,10 +8,17 @@ repositories {
   mavenCentral()
 }
 
+configurations {
+  quasar
+}
+
 dependencies {
   compile group: 'co.paralleluniverse', name: 'quasar-core', version: '0.5.0'
+  quasar  "co.paralleluniverse:quasar-core:0.5.0"
 }
 
 apply plugin: 'application'
 
 mainClassName = 'com.wecamtoplay.Server'
+applicationDefaultJvmArgs = ["-javaagent:${configurations.quasar.iterator().next()}"]
+
