@@ -1,3 +1,3 @@
 
 all:
-	gradle run
+	gradle run --info
